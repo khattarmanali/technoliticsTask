@@ -1,9 +1,15 @@
-import Landing from "../src/pages/Landing";
+import AboutUs from "./pages/AboutUs";
+import Hero from "./pages/Hero";
+import Protient from "./pages/Protient";
+import Review from "./pages/Review";
 
 function App() {
   return (
-    <div className="">
-      <Landing />
+    <div className="overflow-hidden">
+      <Hero />
+      <Protient />
+      <AboutUs />
+      <Review />
     </div>
   );
 }
