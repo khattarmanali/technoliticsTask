@@ -1,11 +1,12 @@
+/* eslint-disable react/style-prop-object */
 import React from "react";
 import { connectElement, policies, siteMap } from "../data/footer";
 import logo from "../img/logof.png";
 const ProductsCard = () => {
   return (
-    <section>
+    <section class=" mt-12 bg-black ">
       <footer class=" bg-black  ">
-        <div class="md:flex md:justify-evenly bg-white">
+        <div class="md:flex md:justify-evenly bg-white w-full h-full">
           <div class="mb-6 md:mb-0">
             <img
               src={logo}
@@ -50,11 +51,22 @@ const ProductsCard = () => {
               <h2 class="mb-6 text-lg font-bold text-black uppercase ">
                 store Locator
               </h2>
+              <iframe
+                src="https://maps.google.com/maps?q=RAIPUR&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                title="location"
+                width="150"
+                height="150"
+                frameBorder="0"
+                style={{ border: "0", borderRadius: "10px" }}
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
           </div>
         </div>
 
-        <div class="sm:flex sm:items-center sm:justify-center bg-black p-9">
+        <div class="sm:flex sm:items-center sm:justify-center bg-black py-8">
           <span class="text-sm text-white sm:text-center ">
             © 2022 IT ISN'T . All Rights Reserved.
           </span>

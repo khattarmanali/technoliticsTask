@@ -7,19 +7,19 @@ function Navigation() {
   return (
     <div>
       <nav className="">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between h-16 ">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img className="h-8 w-8" src={logo} alt="LOGO" />
+                <img className="h-12 w-24" src={logo} alt="LOGO" />
               </div>
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className="ml-10 flex items-baseline space-x-4 sm:mt-6">
                   {navBarElements.map((element) => (
                     <a
                       key={element.name}
                       href={element.link}
-                      className=" hover:bg-green-100 text-white hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium"
+                      className=" hover:bg-green-100 text-white hover:text-green-700 px-3 py-2 rounded-md text-lg font-light"
                     >
                       {element.name}
                     </a>
@@ -31,7 +31,7 @@ function Navigation() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className=" inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-800 focus:ring-white"
+                className=" inline-flex items-center justify-center p-2 rounded-md text-green-700 hover:text-white hover:bg-white-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -90,7 +90,7 @@ function Navigation() {
                   <a
                     key={element.name}
                     href={element.link}
-                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className=" text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {element.name}
                   </a>

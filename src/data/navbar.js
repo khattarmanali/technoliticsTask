@@ -1,6 +1,6 @@
 const navBarElements = [
   {
-    name: "AboutUs",
+    name: "About Us",
     link: "/about",
   },
   {
@@ -12,7 +12,7 @@ const navBarElements = [
     link: "/recipes",
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     link: "/contact",
   },
 ];

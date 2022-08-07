@@ -3,7 +3,7 @@ import aboutUs from "../data/aboutUs";
 import vegan from "../img/vegan.png";
 const AboutUs = () => {
   return (
-    <section>
+    <section className="p-2 py-4">
       <div
         id="about"
         className=" 
@@ -16,11 +16,11 @@ const AboutUs = () => {
           <h4 className="text-xl font-bold text-black text-green-700">
             {aboutUs.title}
           </h4>
-          <h2 className=" text-6xl font-bold text-black italic ">
+          <h2 className=" text-6xl font-bold text-black italic leading-20 mb-6 ">
             {aboutUs.subTitle}
           </h2>
 
-          <p className=" text-center text-xl font-normal text-black">
+          <p className=" text-left text-lg font-medium text-black ">
             {aboutUs.description}
           </p>
         </div>
